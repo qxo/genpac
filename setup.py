@@ -20,7 +20,7 @@ For more information, please visit `project page`_.
 
 
 def get_version():
-    with open('genpac/__init__.py') as f:
+    with open('genpac/__init__.py','r', encoding='UTF-8') as f:
         for line in f:
             if line.startswith('__version__'):
                 return eval(line.split('=')[-1])
